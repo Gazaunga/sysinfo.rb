@@ -5,7 +5,7 @@ require 'rainbow'
 ## METHODS ##
 
 def rainbow_banner
-puts Rainbow("___").bg(:red).bright + Rainbow("___").bg(:green).bright + Rainbow("___").bg(:blue.bright) + Rainbow("___").bg(:yellow).bright + Rainbow("___").bg(:cyan).bright + Rainbow("___").bg(:purple).bright
+puts Rainbow("___").bg(:red).bright + Rainbow("___").bg(:green).bright + Rainbow("___").bg(:blue).bright + Rainbow("___").bg(:yellow).bright + Rainbow("___").bg(:cyan).bright + Rainbow("___").bg(:purple).bright
 end
 
 ## MAIN ##
