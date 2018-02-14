@@ -17,7 +17,7 @@ puts " "
 puts Rainbow("Kernel:").green + " " + Rainbow("#{`uname -smr`}").green
 
 # up time
-up = `cat /proc/uptime`
+up = `cat /proc/uptime`.chomp #to_f ?
 days = "#{up}/86400"
 hours = "#{up}/3600%24"
 mins = "#{up}/60%60"
