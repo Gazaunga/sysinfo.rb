@@ -17,10 +17,10 @@ puts " "
 puts Rainbow("Kernel:").green + " " + Rainbow("#{`uname -smr`}").green
 
 # up time
-up = `cat /proc/uptime`.chomp #to_f ?
-days = "#{up}/86400"
-hours = "#{up}/3600%24"
-mins = "#{up}/60%60"
+up = `cat /proc/uptime`.chomp
+days = "#{up.to_f}/86400"
+hours = "#{up.to_f}/3600%24"
+mins = "#{up.to_f}/60%60"
 puts Rainbow("Uptime:").green + " " + Rainbow("#{up}").green
 
 #puts Rainbow("WM:").green + " " + Rainbow("#{ENV['XDG_CURRENT_DESKTOP']}").green
